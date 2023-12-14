@@ -1,0 +1,2765 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "collapsed_sections": [
+        "yfpHevGkbqgn"
+      ],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    },
+    "widgets": {
+      "application/vnd.jupyter.widget-state+json": {
+        "e090b981ed454826a899e69a7b27490a": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HBoxModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "HBoxModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "HBoxView",
+            "box_style": "",
+            "children": [
+              "IPY_MODEL_ef1338e03ec74c359b8c21b4b431972b",
+              "IPY_MODEL_ca18dcb61508465f89c997cce87d5ed5",
+              "IPY_MODEL_707faf2c47134b6394fe5bbfbb69804a"
+            ],
+            "layout": "IPY_MODEL_bb0a9f8ec3c34bfbbdb37854b5bb558e"
+          }
+        },
+        "ef1338e03ec74c359b8c21b4b431972b": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HTMLModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "HTMLModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "HTMLView",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_d9ce7253397f473e9d5c0b7f2e63dbd8",
+            "placeholder": "​",
+            "style": "IPY_MODEL_3ced9f3c27ca46909bfb6c59be00c563",
+            "value": "Downloading (…)olve/main/vocab.json: 100%"
+          }
+        },
+        "ca18dcb61508465f89c997cce87d5ed5": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "FloatProgressModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "FloatProgressModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "ProgressView",
+            "bar_style": "success",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_f520a32c3b9649e7811a2889c9a830aa",
+            "max": 1042301,
+            "min": 0,
+            "orientation": "horizontal",
+            "style": "IPY_MODEL_2a7503fe0eb4469caecddf71e63a1685",
+            "value": 1042301
+          }
+        },
+        "707faf2c47134b6394fe5bbfbb69804a": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HTMLModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "HTMLModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "HTMLView",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_510e51ee303547d3aa36328e0470882f",
+            "placeholder": "​",
+            "style": "IPY_MODEL_17843f810d9741e2af648f29406cf173",
+            "value": " 1.04M/1.04M [00:00&lt;00:00, 13.0MB/s]"
+          }
+        },
+        "bb0a9f8ec3c34bfbbdb37854b5bb558e": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "d9ce7253397f473e9d5c0b7f2e63dbd8": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "3ced9f3c27ca46909bfb6c59be00c563": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        },
+        "f520a32c3b9649e7811a2889c9a830aa": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "2a7503fe0eb4469caecddf71e63a1685": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "ProgressStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "ProgressStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "bar_color": null,
+            "description_width": ""
+          }
+        },
+        "510e51ee303547d3aa36328e0470882f": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "17843f810d9741e2af648f29406cf173": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        },
+        "81c67d5685374e44a157bc396688ab64": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HBoxModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "HBoxModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "HBoxView",
+            "box_style": "",
+            "children": [
+              "IPY_MODEL_3c47b40f613c4f57a6b81519ad85e2a4",
+              "IPY_MODEL_33f0f5a405e842c58b741759ae79256b",
+              "IPY_MODEL_bbdce01cebd342eaa6874f7509f103e2"
+            ],
+            "layout": "IPY_MODEL_92c2a70e17e94518a068320087daa282"
+          }
+        },
+        "3c47b40f613c4f57a6b81519ad85e2a4": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HTMLModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "HTMLModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "HTMLView",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_63c443d8e27c4d9ab7c5b9de532a632f",
+            "placeholder": "​",
+            "style": "IPY_MODEL_639e54766d6a487f99ef89dd4da29193",
+            "value": "Downloading (…)olve/main/merges.txt: 100%"
+          }
+        },
+        "33f0f5a405e842c58b741759ae79256b": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "FloatProgressModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "FloatProgressModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "ProgressView",
+            "bar_style": "success",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_9ccd402e018049b69b4b0f4a0b79899f",
+            "max": 456318,
+            "min": 0,
+            "orientation": "horizontal",
+            "style": "IPY_MODEL_c6f88680dc4349129f7655d5fd3b7e7b",
+            "value": 456318
+          }
+        },
+        "bbdce01cebd342eaa6874f7509f103e2": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HTMLModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "HTMLModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "HTMLView",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_04091d430b3b4f60a472f90405c26d14",
+            "placeholder": "​",
+            "style": "IPY_MODEL_cafa5b42e00b4ef5abe271fd7d271932",
+            "value": " 456k/456k [00:00&lt;00:00, 21.1MB/s]"
+          }
+        },
+        "92c2a70e17e94518a068320087daa282": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "63c443d8e27c4d9ab7c5b9de532a632f": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "639e54766d6a487f99ef89dd4da29193": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        },
+        "9ccd402e018049b69b4b0f4a0b79899f": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "c6f88680dc4349129f7655d5fd3b7e7b": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "ProgressStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "ProgressStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "bar_color": null,
+            "description_width": ""
+          }
+        },
+        "04091d430b3b4f60a472f90405c26d14": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "cafa5b42e00b4ef5abe271fd7d271932": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        },
+        "9169008569824c4b802ff30c3f1ae22f": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HBoxModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "HBoxModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "HBoxView",
+            "box_style": "",
+            "children": [
+              "IPY_MODEL_c44f709067a54419ac8a1b3b9653a4d0",
+              "IPY_MODEL_c8dd425a1e05438e9b1098a23b9bbd1a",
+              "IPY_MODEL_524d9befd7fb47c8aeaa3e4164a3bf8d"
+            ],
+            "layout": "IPY_MODEL_1ae8511908fb41ce86b23dcfd9dd5bb9"
+          }
+        },
+        "c44f709067a54419ac8a1b3b9653a4d0": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HTMLModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "HTMLModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "HTMLView",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_42f1af66fb8b48a6b51bf0b6da3e837e",
+            "placeholder": "​",
+            "style": "IPY_MODEL_0785146d823549c49862154e4762da2b",
+            "value": "Downloading (…)/main/tokenizer.json: 100%"
+          }
+        },
+        "c8dd425a1e05438e9b1098a23b9bbd1a": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "FloatProgressModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "FloatProgressModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "ProgressView",
+            "bar_style": "success",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_5033ec22b78f45e09dd72d3ee78f74ca",
+            "max": 1355256,
+            "min": 0,
+            "orientation": "horizontal",
+            "style": "IPY_MODEL_f0ce8a6c88a8442c8eca2abac0fa07db",
+            "value": 1355256
+          }
+        },
+        "524d9befd7fb47c8aeaa3e4164a3bf8d": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HTMLModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "HTMLModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "HTMLView",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_8bb142bc9e0a47b392b2c927f63a2bb6",
+            "placeholder": "​",
+            "style": "IPY_MODEL_242486f7e99547a3bd72a61a56847bfd",
+            "value": " 1.36M/1.36M [00:00&lt;00:00, 10.6MB/s]"
+          }
+        },
+        "1ae8511908fb41ce86b23dcfd9dd5bb9": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "42f1af66fb8b48a6b51bf0b6da3e837e": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "0785146d823549c49862154e4762da2b": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        },
+        "5033ec22b78f45e09dd72d3ee78f74ca": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "f0ce8a6c88a8442c8eca2abac0fa07db": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "ProgressStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "ProgressStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "bar_color": null,
+            "description_width": ""
+          }
+        },
+        "8bb142bc9e0a47b392b2c927f63a2bb6": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "242486f7e99547a3bd72a61a56847bfd": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        },
+        "f66b4b7ff4f2455b845663229c5a4b6e": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HBoxModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "HBoxModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "HBoxView",
+            "box_style": "",
+            "children": [
+              "IPY_MODEL_81b514b143a841ad87d4f43e76191ebc",
+              "IPY_MODEL_05588ed89d744279a2c1a6c3e378d730",
+              "IPY_MODEL_c250d8c244f64d2ea28e92e522318603"
+            ],
+            "layout": "IPY_MODEL_2a593b5fd5b24826b69f208b8de5bb86"
+          }
+        },
+        "81b514b143a841ad87d4f43e76191ebc": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HTMLModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "HTMLModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "HTMLView",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_b7dda0d245fd4c11bcf17bece1bb334a",
+            "placeholder": "​",
+            "style": "IPY_MODEL_d755039ee8a5408e9924f01106520b8e",
+            "value": "Downloading (…)lve/main/config.json: 100%"
+          }
+        },
+        "05588ed89d744279a2c1a6c3e378d730": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "FloatProgressModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "FloatProgressModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "ProgressView",
+            "bar_style": "success",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_2c3a1b94a15a43de9eb2c7af4da05c82",
+            "max": 665,
+            "min": 0,
+            "orientation": "horizontal",
+            "style": "IPY_MODEL_73e90508b3dc4dbd8bc10de338e34447",
+            "value": 665
+          }
+        },
+        "c250d8c244f64d2ea28e92e522318603": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HTMLModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "HTMLModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "HTMLView",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_75ae6ef613e04bf3a0e1868bd269b8a9",
+            "placeholder": "​",
+            "style": "IPY_MODEL_e2afc9549b0e46f68d67d652c425a156",
+            "value": " 665/665 [00:00&lt;00:00, 43.7kB/s]"
+          }
+        },
+        "2a593b5fd5b24826b69f208b8de5bb86": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "b7dda0d245fd4c11bcf17bece1bb334a": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "d755039ee8a5408e9924f01106520b8e": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        },
+        "2c3a1b94a15a43de9eb2c7af4da05c82": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "73e90508b3dc4dbd8bc10de338e34447": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "ProgressStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "ProgressStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "bar_color": null,
+            "description_width": ""
+          }
+        },
+        "75ae6ef613e04bf3a0e1868bd269b8a9": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "e2afc9549b0e46f68d67d652c425a156": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        }
+      }
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Gabyriveros99/codingthelawfinal/blob/main/Negotiation_Salary_Simulation.Nov_13_Version(not_final)\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# A Simple Text-Adventure Engine\n",
+        "\n",
+        "To play a game, run the cells below and follow the instructions under **Role Play**. If you're not intested in seeing any code code, simpily don't expand those sections. Note: you will need an OpenAI API key.\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "cBwaKSob1Stk"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# You'll need an API key to play. After creating an OpenAI account,\n",
+        "# you can create an API key here: https://platform.openai.com/account/api-keys\n",
+        "api_key = \"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\" #<---- Place your API key here!"
+      ],
+      "metadata": {
+        "id": "kDVXF6FjLLuI"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Load Stuff\n",
+        "\n",
+        "Will probably take around 50 seconds."
+      ],
+      "metadata": {
+        "id": "NalKLyvrLdtz"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Packages\n",
+        "This is the part that takes around 50 seconds."
+      ],
+      "metadata": {
+        "id": "yfpHevGkbqgn"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "yLyBnrWCkYHC",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "referenced_widgets": [
+            "e090b981ed454826a899e69a7b27490a",
+            "ef1338e03ec74c359b8c21b4b431972b",
+            "ca18dcb61508465f89c997cce87d5ed5",
+            "707faf2c47134b6394fe5bbfbb69804a",
+            "bb0a9f8ec3c34bfbbdb37854b5bb558e",
+            "d9ce7253397f473e9d5c0b7f2e63dbd8",
+            "3ced9f3c27ca46909bfb6c59be00c563",
+            "f520a32c3b9649e7811a2889c9a830aa",
+            "2a7503fe0eb4469caecddf71e63a1685",
+            "510e51ee303547d3aa36328e0470882f",
+            "17843f810d9741e2af648f29406cf173",
+            "81c67d5685374e44a157bc396688ab64",
+            "3c47b40f613c4f57a6b81519ad85e2a4",
+            "33f0f5a405e842c58b741759ae79256b",
+            "bbdce01cebd342eaa6874f7509f103e2",
+            "92c2a70e17e94518a068320087daa282",
+            "63c443d8e27c4d9ab7c5b9de532a632f",
+            "639e54766d6a487f99ef89dd4da29193",
+            "9ccd402e018049b69b4b0f4a0b79899f",
+            "c6f88680dc4349129f7655d5fd3b7e7b",
+            "04091d430b3b4f60a472f90405c26d14",
+            "cafa5b42e00b4ef5abe271fd7d271932",
+            "9169008569824c4b802ff30c3f1ae22f",
+            "c44f709067a54419ac8a1b3b9653a4d0",
+            "c8dd425a1e05438e9b1098a23b9bbd1a",
+            "524d9befd7fb47c8aeaa3e4164a3bf8d",
+            "1ae8511908fb41ce86b23dcfd9dd5bb9",
+            "42f1af66fb8b48a6b51bf0b6da3e837e",
+            "0785146d823549c49862154e4762da2b",
+            "5033ec22b78f45e09dd72d3ee78f74ca",
+            "f0ce8a6c88a8442c8eca2abac0fa07db",
+            "8bb142bc9e0a47b392b2c927f63a2bb6",
+            "242486f7e99547a3bd72a61a56847bfd",
+            "f66b4b7ff4f2455b845663229c5a4b6e",
+            "81b514b143a841ad87d4f43e76191ebc",
+            "05588ed89d744279a2c1a6c3e378d730",
+            "c250d8c244f64d2ea28e92e522318603",
+            "2a593b5fd5b24826b69f208b8de5bb86",
+            "b7dda0d245fd4c11bcf17bece1bb334a",
+            "d755039ee8a5408e9924f01106520b8e",
+            "2c3a1b94a15a43de9eb2c7af4da05c82",
+            "73e90508b3dc4dbd8bc10de338e34447",
+            "75ae6ef613e04bf3a0e1868bd269b8a9",
+            "e2afc9549b0e46f68d67d652c425a156"
+          ]
+        },
+        "outputId": "df51db68-09c2-4d46-c1c8-26590612afe6"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Collecting transformers\n",
+            "  Downloading transformers-4.35.0-py3-none-any.whl (7.9 MB)\n",
+            "\u001b[2K     \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m7.9/7.9 MB\u001b[0m \u001b[31m47.4 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\n",
+            "\u001b[?25hRequirement already satisfied: filelock in /usr/local/lib/python3.10/dist-packages (from transformers) (3.13.1)\n",
+            "Collecting huggingface-hub<1.0,>=0.16.4 (from transformers)\n",
+            "  Downloading huggingface_hub-0.19.1-py3-none-any.whl (311 kB)\n",
+            "\u001b[2K     \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m311.1/311.1 kB\u001b[0m \u001b[31m32.1 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\n",
+            "\u001b[?25hRequirement already satisfied: numpy>=1.17 in /usr/local/lib/python3.10/dist-packages (from transformers) (1.23.5)\n",
+            "Requirement already satisfied: packaging>=20.0 in /usr/local/lib/python3.10/dist-packages (from transformers) (23.2)\n",
+            "Requirement already satisfied: pyyaml>=5.1 in /usr/local/lib/python3.10/dist-packages (from transformers) (6.0.1)\n",
+            "Requirement already satisfied: regex!=2019.12.17 in /usr/local/lib/python3.10/dist-packages (from transformers) (2023.6.3)\n",
+            "Requirement already satisfied: requests in /usr/local/lib/python3.10/dist-packages (from transformers) (2.31.0)\n",
+            "Collecting tokenizers<0.15,>=0.14 (from transformers)\n",
+            "  Downloading tokenizers-0.14.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.8 MB)\n",
+            "\u001b[2K     \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m3.8/3.8 MB\u001b[0m \u001b[31m71.1 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\n",
+            "\u001b[?25hCollecting safetensors>=0.3.1 (from transformers)\n",
+            "  Downloading safetensors-0.4.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.3 MB)\n",
+            "\u001b[2K     \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m1.3/1.3 MB\u001b[0m \u001b[31m66.8 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\n",
+            "\u001b[?25hRequirement already satisfied: tqdm>=4.27 in /usr/local/lib/python3.10/dist-packages (from transformers) (4.66.1)\n",
+            "Requirement already satisfied: fsspec>=2023.5.0 in /usr/local/lib/python3.10/dist-packages (from huggingface-hub<1.0,>=0.16.4->transformers) (2023.6.0)\n",
+            "Requirement already satisfied: typing-extensions>=3.7.4.3 in /usr/local/lib/python3.10/dist-packages (from huggingface-hub<1.0,>=0.16.4->transformers) (4.5.0)\n",
+            "Collecting huggingface-hub<1.0,>=0.16.4 (from transformers)\n",
+            "  Downloading huggingface_hub-0.17.3-py3-none-any.whl (295 kB)\n",
+            "\u001b[2K     \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m295.0/295.0 kB\u001b[0m \u001b[31m32.8 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\n",
+            "\u001b[?25hRequirement already satisfied: charset-normalizer<4,>=2 in /usr/local/lib/python3.10/dist-packages (from requests->transformers) (3.3.2)\n",
+            "Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.10/dist-packages (from requests->transformers) (3.4)\n",
+            "Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.10/dist-packages (from requests->transformers) (2.0.7)\n",
+            "Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.10/dist-packages (from requests->transformers) (2023.7.22)\n",
+            "Installing collected packages: safetensors, huggingface-hub, tokenizers, transformers\n",
+            "Successfully installed huggingface-hub-0.17.3 safetensors-0.4.0 tokenizers-0.14.1 transformers-4.35.0\n",
+            "Collecting openai==0.28\n",
+            "  Downloading openai-0.28.0-py3-none-any.whl (76 kB)\n",
+            "\u001b[2K     \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m76.5/76.5 kB\u001b[0m \u001b[31m2.0 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\n",
+            "\u001b[?25hRequirement already satisfied: requests>=2.20 in /usr/local/lib/python3.10/dist-packages (from openai==0.28) (2.31.0)\n",
+            "Requirement already satisfied: tqdm in /usr/local/lib/python3.10/dist-packages (from openai==0.28) (4.66.1)\n",
+            "Requirement already satisfied: aiohttp in /usr/local/lib/python3.10/dist-packages (from openai==0.28) (3.8.6)\n",
+            "Requirement already satisfied: charset-normalizer<4,>=2 in /usr/local/lib/python3.10/dist-packages (from requests>=2.20->openai==0.28) (3.3.2)\n",
+            "Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.10/dist-packages (from requests>=2.20->openai==0.28) (3.4)\n",
+            "Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.10/dist-packages (from requests>=2.20->openai==0.28) (2.0.7)\n",
+            "Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.10/dist-packages (from requests>=2.20->openai==0.28) (2023.7.22)\n",
+            "Requirement already satisfied: attrs>=17.3.0 in /usr/local/lib/python3.10/dist-packages (from aiohttp->openai==0.28) (23.1.0)\n",
+            "Requirement already satisfied: multidict<7.0,>=4.5 in /usr/local/lib/python3.10/dist-packages (from aiohttp->openai==0.28) (6.0.4)\n",
+            "Requirement already satisfied: async-timeout<5.0,>=4.0.0a3 in /usr/local/lib/python3.10/dist-packages (from aiohttp->openai==0.28) (4.0.3)\n",
+            "Requirement already satisfied: yarl<2.0,>=1.0 in /usr/local/lib/python3.10/dist-packages (from aiohttp->openai==0.28) (1.9.2)\n",
+            "Requirement already satisfied: frozenlist>=1.1.1 in /usr/local/lib/python3.10/dist-packages (from aiohttp->openai==0.28) (1.4.0)\n",
+            "Requirement already satisfied: aiosignal>=1.1.2 in /usr/local/lib/python3.10/dist-packages (from aiohttp->openai==0.28) (1.3.1)\n",
+            "Installing collected packages: openai\n",
+            "\u001b[31mERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.\n",
+            "llmx 0.0.15a0 requires cohere, which is not installed.\n",
+            "llmx 0.0.15a0 requires tiktoken, which is not installed.\u001b[0m\u001b[31m\n",
+            "\u001b[0mSuccessfully installed openai-0.28.0\n",
+            "Collecting tiktoken\n",
+            "  Downloading tiktoken-0.5.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.0 MB)\n",
+            "\u001b[2K     \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m2.0/2.0 MB\u001b[0m \u001b[31m9.5 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\n",
+            "\u001b[?25hRequirement already satisfied: regex>=2022.1.18 in /usr/local/lib/python3.10/dist-packages (from tiktoken) (2023.6.3)\n",
+            "Requirement already satisfied: requests>=2.26.0 in /usr/local/lib/python3.10/dist-packages (from tiktoken) (2.31.0)\n",
+            "Requirement already satisfied: charset-normalizer<4,>=2 in /usr/local/lib/python3.10/dist-packages (from requests>=2.26.0->tiktoken) (3.3.2)\n",
+            "Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.10/dist-packages (from requests>=2.26.0->tiktoken) (3.4)\n",
+            "Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.10/dist-packages (from requests>=2.26.0->tiktoken) (2.0.7)\n",
+            "Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.10/dist-packages (from requests>=2.26.0->tiktoken) (2023.7.22)\n",
+            "Installing collected packages: tiktoken\n",
+            "\u001b[31mERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.\n",
+            "llmx 0.0.15a0 requires cohere, which is not installed.\u001b[0m\u001b[31m\n",
+            "\u001b[0mSuccessfully installed tiktoken-0.5.1\n"
+          ]
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "Downloading (…)olve/main/vocab.json:   0%|          | 0.00/1.04M [00:00<?, ?B/s]"
+            ],
+            "application/vnd.jupyter.widget-view+json": {
+              "version_major": 2,
+              "version_minor": 0,
+              "model_id": "e090b981ed454826a899e69a7b27490a"
+            }
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "Downloading (…)olve/main/merges.txt:   0%|          | 0.00/456k [00:00<?, ?B/s]"
+            ],
+            "application/vnd.jupyter.widget-view+json": {
+              "version_major": 2,
+              "version_minor": 0,
+              "model_id": "81c67d5685374e44a157bc396688ab64"
+            }
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "Downloading (…)/main/tokenizer.json:   0%|          | 0.00/1.36M [00:00<?, ?B/s]"
+            ],
+            "application/vnd.jupyter.widget-view+json": {
+              "version_major": 2,
+              "version_minor": 0,
+              "model_id": "9169008569824c4b802ff30c3f1ae22f"
+            }
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "Downloading (…)lve/main/config.json:   0%|          | 0.00/665 [00:00<?, ?B/s]"
+            ],
+            "application/vnd.jupyter.widget-view+json": {
+              "version_major": 2,
+              "version_minor": 0,
+              "model_id": "f66b4b7ff4f2455b845663229c5a4b6e"
+            }
+          },
+          "metadata": {}
+        }
+      ],
+      "source": [
+        "!pip install transformers\n",
+        "#!pip install openai\n",
+        "!pip install openai==0.28\n",
+        "!pip install tiktoken\n",
+        "\n",
+        "import os\n",
+        "import re\n",
+        "import json\n",
+        "import random\n",
+        "from datetime import date, datetime, timedelta\n",
+        "\n",
+        "from nltk.tokenize import word_tokenize, sent_tokenize\n",
+        "\n",
+        "import openai\n",
+        "from transformers import GPT2TokenizerFast\n",
+        "tokenizer = GPT2TokenizerFast.from_pretrained(\"gpt2\")\n",
+        "\n",
+        "import tiktoken\n",
+        "ENCODING = \"gpt2\"\n",
+        "encoding = tiktoken.get_encoding(ENCODING)\n",
+        "\n",
+        "from ipywidgets import interact, interactive, fixed, interact_manual, Layout\n",
+        "import ipywidgets as widgets\n",
+        "\n",
+        "from IPython.display import HTML, display\n",
+        "\n",
+        "def set_css():\n",
+        "  display(HTML('''\n",
+        "  <style>\n",
+        "    pre {\n",
+        "        white-space: pre-wrap;\n",
+        "    }\n",
+        "  </style>\n",
+        "  '''))\n",
+        "get_ipython().events.register('pre_run_cell', set_css)\n",
+        "\n",
+        "openai.api_key = api_key"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Custom functions"
+      ],
+      "metadata": {
+        "id": "GQ3xktng1srO"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def complete_text(prompt,temp=0,trys=0,clean=False,tokens_used=0):\n",
+        "\n",
+        "    model=\"text-davinci-003\"\n",
+        "    model_token_limit = 4097\n",
+        "\n",
+        "    token_count = len(encoding.encode(prompt))\n",
+        "    max_tokens= model_token_limit-round(token_count+5)\n",
+        "\n",
+        "    #try:\n",
+        "    response = openai.Completion.create(\n",
+        "      model=model,\n",
+        "      prompt=prompt,\n",
+        "      temperature=temp,\n",
+        "      max_tokens=max_tokens,\n",
+        "      top_p=1.0,\n",
+        "      frequency_penalty=0.0,\n",
+        "      presence_penalty=0.0\n",
+        "    )\n",
+        "    output = str(response[\"choices\"][0][\"text\"].strip())\n",
+        "    #except:\n",
+        "        #print(\"Problem with API call!\")\n",
+        "        #output = \"\"\"{\"output\":\"error\"}\"\"\"\n",
+        "\n",
+        "    tokens_used += token_count+len(encoding.encode(output))\n",
+        "\n",
+        "    if clean:\n",
+        "        cleaned_output,tokens_used = clean_pseudo_json(output,temp=0,trys=trys,tokens_used=tokens_used)\n",
+        "        try:\n",
+        "            cleaned_output = json.loads(cleaned_output)\n",
+        "        except:\n",
+        "            cleaned_output = cleaned_output\n",
+        "        return cleaned_output,tokens_used\n",
+        "    else:\n",
+        "        try:\n",
+        "            output = json.loads(output)\n",
+        "        except:\n",
+        "            output = output\n",
+        "        return output,tokens_used\n",
+        "\n",
+        "def clean_pseudo_json(string,temp=0,key=\"output\",trys=0,ask_for_help=1,tokens_used=0):\n",
+        "    try:\n",
+        "        output = json.loads(string)[key]\n",
+        "    except:\n",
+        "        try:\n",
+        "            string_4_json = re.findall(\"\\{.*\\}\",re.sub(\"\\n\",\"\",string))[0]\n",
+        "            output = json.loads(string_4_json)[key]\n",
+        "        except:\n",
+        "            try:\n",
+        "                string = \"{\"+string+\"}\"\n",
+        "                string_4_json = re.findall(\"\\{.*\\}\",re.sub(\"\\n\",\"\",string))[0]\n",
+        "                output = json.loads(string_4_json)[key]\n",
+        "            except Exception as e:\n",
+        "                prompt = \"I tried to parse some json and got this error, '{}'. This was the would-be json.\\n\\n{}\\n\\nReformat it to fix the error.\".format(e,string)\n",
+        "                if trys <= 3:\n",
+        "                    if trys == 0:\n",
+        "                        warm_up = 0\n",
+        "                    else:\n",
+        "                        warm_up = 0.25\n",
+        "                    output,tokens_used = complete_text(prompt,temp=0+warm_up,trys=trys+1,tokens_used=tokens_used)\n",
+        "                    print(\"\\n\"+str(output)+\"\\n\")\n",
+        "                elif ask_for_help==1:\n",
+        "                    print(prompt+\"\\nReformaing FAILED!!!\")\n",
+        "                    try:\n",
+        "                        os.system( \"say hey! I need some help. A little help please?\")\n",
+        "                    except:\n",
+        "                        print(\"'say' not supported.\\n\\n\")\n",
+        "                    output = input(\"Let's see if we can avoid being derailed. Examine the above output and construct your own output text. Then enter it below. If the output needs to be something other than a string, e.g., a list or json, start it with `EVAL: `. If you're typing that, be very sure there's no malicious code in the output.\\n\")\n",
+        "                    if output[:6]==\"EVAL: \":\n",
+        "                        output = eval(output[6:])\n",
+        "                else:\n",
+        "                    output = \"There was an error getting a reponse!\"\n",
+        "\n",
+        "    return output,tokens_used\n"
+      ],
+      "metadata": {
+        "id": "6jvCoNUSkvKa",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 17
+        },
+        "outputId": "02943d91-4319-46df-a208-8add83fb4614"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "\n",
+              "  <style>\n",
+              "    pre {\n",
+              "        white-space: pre-wrap;\n",
+              "    }\n",
+              "  </style>\n",
+              "  "
+            ]
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def find_dict(data, key, value):\n",
+        "  \"\"\"Filter a list of dictionaries by a given key and value.\n",
+        "\n",
+        "  Args:\n",
+        "    data: A list of dictionaries.\n",
+        "    key: The key to filter by.\n",
+        "    value: The value to filter by.\n",
+        "\n",
+        "  Returns:\n",
+        "    A list of dictionaries that match the given key and value.\n",
+        "  \"\"\"\n",
+        "\n",
+        "  filtered_data = []\n",
+        "  for item in data:\n",
+        "    if item[key] == value:\n",
+        "      filtered_data.append(item)\n",
+        "  return filtered_data[0]\n",
+        "\n",
+        "def find_other_dict(data, key, value):\n",
+        "  \"\"\"Filter a list of dictionaries by a given key and value.\n",
+        "\n",
+        "  Args:\n",
+        "    data: A list of dictionaries.\n",
+        "    key: The key to filter by.\n",
+        "    value: The value to filter by.\n",
+        "\n",
+        "  Returns:\n",
+        "    A list of dictionaries that do NOT match the given key and value.\n",
+        "  \"\"\"\n",
+        "\n",
+        "  filtered_data = []\n",
+        "  for item in data:\n",
+        "    if item[key] != value:\n",
+        "      filtered_data.append(item)\n",
+        "  return random.choice(filtered_data)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 17
+        },
+        "id": "tclevXkbgm5R",
+        "outputId": "e6353b5f-4786-4da5-dc7f-2264f1e4da62"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "\n",
+              "  <style>\n",
+              "    pre {\n",
+              "        white-space: pre-wrap;\n",
+              "    }\n",
+              "  </style>\n",
+              "  "
+            ]
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def set_scene(state):\n",
+        "\n",
+        "  if state[\"scene\"]>0:\n",
+        "    last = \"\\n\\nFor context, in the last scene this is what happened: {}\".format(state[\"scenes\"][state[\"scene\"]-1][\"summary\"])\n",
+        "  else:\n",
+        "    last = \"\"\n",
+        "\n",
+        "  prompt = \"\"\"Given the following information, write a short bit of prose establishing the scene. Use super descriptive language. Paint a picture with your words. {}\n",
+        "\n",
+        "Background for this scene:\n",
+        "{}{}\n",
+        "\n",
+        "Return a json object, including the outermost currly brakets, where the key is \"output\" and the value is the text of your prose. Be sure to use valid json, encasing keys and values in double quotes, and escaping internal quotes and special characters as needed.\n",
+        "\"\"\".format(last,state[\"genre\"],state[\"scenes\"][state[\"scene\"]][\"setting\"])\n",
+        "\n",
+        "  #print(\"\\n\"+prompt+\"\\n\")\n",
+        "\n",
+        "  return \"Narrator: \"+complete_text(prompt,temp=0.7)[0][\"output\"]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 17
+        },
+        "id": "wv9tZLHAMuWL",
+        "outputId": "3ac3417b-999e-4107-8384-c52f2e70363a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "\n",
+              "  <style>\n",
+              "    pre {\n",
+              "        white-space: pre-wrap;\n",
+              "    }\n",
+              "  </style>\n",
+              "  "
+            ]
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def new_line(state, auto=0):\n",
+        "\n",
+        "  possible_roles = []\n",
+        "  for name in state[\"scenes\"][state[\"scene\"]][\"present\"]:\n",
+        "    possible_roles += [find_dict(state[\"characters\"], \"name\", name)]\n",
+        "\n",
+        "  if auto==0:\n",
+        "    state[\"scenes\"][state[\"scene\"]][\"transcript\"] += [\"{}: {}\".format(state[\"play_as\"],state[\"input\"])]\n",
+        "    role = find_other_dict(possible_roles, \"name\", state[\"play_as\"])\n",
+        "  elif auto==1:\n",
+        "    #print(\"Auto generating line for {}.\".format(state[\"play_as\"]))\n",
+        "    role = find_dict(possible_roles, \"name\", state[\"play_as\"])\n",
+        "\n",
+        "  prompt = \"\"\"{}{} You are an actor playing the role of {}. {}{}\n",
+        "\n",
+        "{}\n",
+        "\n",
+        "Acording to the director: {}\n",
+        "\n",
+        "Here is a transcript of what has happened so far, with the Narrator providing insight into physical actions.\n",
+        "\n",
+        "{}\n",
+        "\n",
+        "--\n",
+        "\n",
+        "In character, how do you respond? Do not repeat yourself.\n",
+        "\n",
+        "Return a json object, including the outermost currly brakets, where the key is \"output\" and the value is the text of your response as it would appear on a script, be sure to start with \"{}:\". Be sure to use valid json, encasing keys and values in double quotes, and escaping internal quotes and special characters as needed.\n",
+        "\"\"\".format(state[\"genre\"],state[\"scenes\"][state[\"scene\"]][\"setting\"],role[\"name\"],role[\"brief_bio\"],role[\"motivation\"],state[\"scenes\"][state[\"scene\"]][\"frame\"],state[\"scenes\"][state[\"scene\"]][\"directors_notes\"],\"\\n\".join(state[\"scenes\"][state[\"scene\"]][\"transcript\"]),role[\"name\"])\n",
+        "\n",
+        "  #print(\"\\n\\n\"+prompt+\"\\n\\n\")\n",
+        "\n",
+        "  return complete_text(prompt,temp=0.7)[0][\"output\"]\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 17
+        },
+        "id": "309mTs16o-B5",
+        "outputId": "095233d3-8c0f-410a-f102-d5a82659f355"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "\n",
+              "  <style>\n",
+              "    pre {\n",
+              "        white-space: pre-wrap;\n",
+              "    }\n",
+              "  </style>\n",
+              "  "
+            ]
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def new_direction(state):\n",
+        "\n",
+        "  prompt = \"\"\"{}{} Here is a transcript of what has happened so far, with the Narrator providing insight into physical actions.\n",
+        "\n",
+        "{}\n",
+        "\n",
+        "----\n",
+        "\n",
+        "{} would like to {}.\n",
+        "\n",
+        "Based on what you know of the situation, return a narrator's description of what should happen next in the story. Do not include dialogue, only narration.\n",
+        "\n",
+        "Use super descriptive language. Paint a picture with your words.\n",
+        "\n",
+        "Return a json object, including the outermost currly brakets, where the key is \"output\" and the value is the text of your response. Be sure to use valid json, encasing keys and values in double quotes, and escaping internal quotes and special characters as needed.\n",
+        "\"\"\".format(state[\"genre\"],state[\"scenes\"][state[\"scene\"]][\"setting\"],\"\\n\".join(state[\"scenes\"][state[\"scene\"]][\"transcript\"]),state[\"play_as\"],re.findall(\"^do: ?(.*)\",state[\"input\"])[0])\n",
+        "\n",
+        "  #print(\"\\n\"+prompt+\"\\n\")\n",
+        "\n",
+        "  return \"Narrator: \"+complete_text(prompt,temp=0.7)[0][\"output\"]\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 17
+        },
+        "id": "turhce1bo-Jb",
+        "outputId": "55f8c2e9-bf1f-4600-92f8-edeac9ab2ccb"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "\n",
+              "  <style>\n",
+              "    pre {\n",
+              "        white-space: pre-wrap;\n",
+              "    }\n",
+              "  </style>\n",
+              "  "
+            ]
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def sum_up(state):\n",
+        "\n",
+        "  prompt = \"\"\"{} Here is a transcript of what has happened so far, with the Narrator providing insight into physical actions.\n",
+        "\n",
+        "Transcript:\n",
+        "\n",
+        "{}\n",
+        "\n",
+        "-----\n",
+        "{} Write a short summary of what has happened so far, being sure to note who has done what.\n",
+        "\n",
+        "Return a json object, including the outermost currly brakets, where the key is \"output\" and the value is your summary. Be sure to use valid json, encasing keys and values in double quotes, and escaping internal quotes and special characters as needed.\n",
+        "\"\"\".format(state[\"scenes\"][state[\"scene\"]][\"setting\"],\"\\n\".join(state[\"scenes\"][state[\"scene\"]][\"transcript\"]),state[\"scenes\"][state[\"scene\"]][\"ends_when\"])\n",
+        "\n",
+        "  #print(\"\\n\"+prompt+\"\\n\")\n",
+        "\n",
+        "  return complete_text(prompt,temp=0.7)[0][\"output\"]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 17
+        },
+        "id": "bVJ9mXse6nEs",
+        "outputId": "3eb103fc-74f3-45c6-d4f0-2df0558e5e63"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "\n",
+              "  <style>\n",
+              "    pre {\n",
+              "        white-space: pre-wrap;\n",
+              "    }\n",
+              "  </style>\n",
+              "  "
+            ]
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def end_scene(state):\n",
+        "\n",
+        "  prompt = \"\"\"{} Here is a transcript of what has happened so far, with the Narrator providing insight into physical actions.\n",
+        "\n",
+        "Transcript:\n",
+        "\n",
+        "{}\n",
+        "\n",
+        "-----\n",
+        "{} Has this happened yet, yes or no?\n",
+        "\n",
+        "Return a json object, including the outermost currly brakets, where the key is \"output\" and the value is \"yes\" or \"no.\" Be sure to use valid json, encasing keys and values in double quotes, and escaping internal quotes and special characters as needed.\n",
+        "\"\"\".format(state[\"scenes\"][state[\"scene\"]][\"setting\"],\"\\n\".join(state[\"scenes\"][state[\"scene\"]][\"transcript\"]),state[\"scenes\"][state[\"scene\"]][\"ends_when\"])\n",
+        "\n",
+        "  #print(\"\\n\"+prompt+\"\\n\")\n",
+        "\n",
+        "  response = complete_text(prompt,temp=0.7)[0][\"output\"]\n",
+        "  if \"yes\" in response.lower():\n",
+        "\n",
+        "    state[\"scenes\"][state[\"scene\"]][\"summary\"] = sum_up(state)\n",
+        "\n",
+        "    if state[\"scene\"]<len(state[\"scenes\"])-1:\n",
+        "      print(\"New scene!\\n\")\n",
+        "      state[\"scene\"] += 1\n",
+        "      output = set_scene(state)\n",
+        "      state[\"scenes\"][state[\"scene\"]][\"transcript\"] += [output]\n",
+        "\n",
+        "      if state[\"player_goes_first\"] == 0:\n",
+        "        print(\"Auto generate first line\")\n",
+        "        user_tmp = state[\"play_as\"]\n",
+        "        possible_roles = []\n",
+        "        for name in state[\"scenes\"][state[\"scene\"]][\"present\"]:\n",
+        "          possible_roles += [find_dict(state[\"characters\"], \"name\", name)]\n",
+        "        state[\"play_as\"] = find_other_dict(possible_roles, \"name\", state[\"play_as\"])[\"name\"]\n",
+        "        output = new_line(state,1)\n",
+        "        state[\"play_as\"] = user_tmp\n",
+        "        state[\"scenes\"][state[\"scene\"]][\"transcript\"] += [output]\n",
+        "        next = end_scene(state)\n",
+        "\n",
+        "    else:\n",
+        "      print(\"The End\\n\")\n",
+        "      state[\"scene\"] = -1\n",
+        "\n",
+        "  return state"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 17
+        },
+        "id": "lN-NfVkW7-76",
+        "outputId": "66cc9a47-b79d-4135-911e-07e3f8b95a14"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "\n",
+              "  <style>\n",
+              "    pre {\n",
+              "        white-space: pre-wrap;\n",
+              "    }\n",
+              "  </style>\n",
+              "  "
+            ]
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def get_names(state):\n",
+        "  names = []\n",
+        "  for name in state[\"characters\"]:\n",
+        "    names += [name[\"name\"]]\n",
+        "  return names\n",
+        "\n",
+        "def run_scene (state):\n",
+        "\n",
+        "  scene_index = int(state[\"scene\"])\n",
+        "  if len(state[\"scenes\"][scene_index][\"transcript\"]) == 0:\n",
+        "    output = set_scene(state)\n",
+        "    state[\"scenes\"][scene_index][\"transcript\"] += [output]\n",
+        "\n",
+        "\n",
+        "    if state[\"player_goes_first\"] == 0:\n",
+        "      print(\"Auto generate first line\")\n",
+        "      user_tmp = state[\"play_as\"]\n",
+        "      possible_roles = []\n",
+        "      for name in state[\"scenes\"][state[\"scene\"]][\"present\"]:\n",
+        "        possible_roles += [find_dict(state[\"characters\"], \"name\", name)]\n",
+        "      state[\"play_as\"] = find_other_dict(possible_roles, \"name\", state[\"play_as\"])[\"name\"]\n",
+        "      output = new_line(state,1)\n",
+        "      state[\"play_as\"] = user_tmp\n",
+        "      state[\"scenes\"][state[\"scene\"]][\"transcript\"] += [output]\n",
+        "      next = end_scene(state)\n",
+        "\n",
+        "  else:\n",
+        "    if state[\"input\"]!=\"\":\n",
+        "      if re.findall(\"^do: ?(.*)\",state[\"input\"]):\n",
+        "        output = new_direction(state)\n",
+        "      else:\n",
+        "        output = new_line(state)\n",
+        "\n",
+        "      state[\"scenes\"][state[\"scene\"]][\"transcript\"] += [output]\n",
+        "      next = end_scene(state)\n",
+        "    else:\n",
+        "      print(\"Auto generate exchange\")\n",
+        "      output = new_line(state,1)\n",
+        "      possible_speaker = re.search(\"(\\w+):\",output)\n",
+        "      if (possible_speaker):\n",
+        "        if (possible_speaker[1] in get_names(state)):\n",
+        "          output = re.sub(\"\\w+:\",\"\",output)\n",
+        "      state[\"input\"] += output\n",
+        "      state = run_scene(state)\n",
+        "\n",
+        "  state[\"input\"] = None\n",
+        "\n",
+        "  return state"
+      ],
+      "metadata": {
+        "id": "W2nG2nTBk9g2",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 17
+        },
+        "outputId": "f73f29c4-89c1-46dd-e74d-56d4a443a312"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "\n",
+              "  <style>\n",
+              "    pre {\n",
+              "        white-space: pre-wrap;\n",
+              "    }\n",
+              "  </style>\n",
+              "  "
+            ]
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def role_paly(state):\n",
+        "  global i, usr_output\n",
+        "  if i>0:\n",
+        "    state[\"input\"] = usr_output.value\n",
+        "  i += 1\n",
+        "\n",
+        "  state = run_scene(state)\n",
+        "\n",
+        "  if state[\"scene\"]>=0:\n",
+        "\n",
+        "    print(\"\\nYou're name is {}. You are standing in... \\n\\n{}{}\\n\".format(state[\"play_as\"],state[\"scenes\"][state[\"scene\"]][\"setting\"],state[\"scenes\"][state[\"scene\"]][\"frame\"]))\n",
+        "\n",
+        "    print(\"Note: {}\\n\".format(state[\"scenes\"][state[\"scene\"]][\"ends_when\"]))\n",
+        "\n",
+        "    print(\"What do you do/say?\\n\")\n",
+        "\n",
+        "    script = widgets.Textarea(\n",
+        "      value=\"\\n\\n\".join(state[\"scenes\"][state[\"scene\"]][\"transcript\"]),\n",
+        "      description='Trascript:',\n",
+        "      disabled=True,\n",
+        "      layout=Layout(width='95%', height='300px')\n",
+        "    )\n",
+        "    display(script)\n",
+        "\n",
+        "    usr_output = widgets.Textarea(\n",
+        "        value=\"\",\n",
+        "        description='Say/Do:',\n",
+        "        disabled=False,\n",
+        "        layout=Layout(width='95%', height='50px')\n",
+        "    )\n",
+        "\n",
+        "    display(usr_output)\n",
+        "  else:\n",
+        "    j = 1\n",
+        "    for scene in state[\"scenes\"]:\n",
+        "      print(\"=============\\n\\nSCENE {}\\n\".format(j))\n",
+        "      print(\"\\n\\n\".join(state[\"scenes\"][state[\"scene\"]][\"transcript\"]))\n",
+        "      j+=1\n",
+        "    print(\"\\n\\n~ THE END ~\")"
+      ],
+      "metadata": {
+        "id": "I-RaPQh6mwf6",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 17
+        },
+        "outputId": "ba2d6f6c-44e9-419f-d0db-695417adb28b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "\n",
+              "  <style>\n",
+              "    pre {\n",
+              "        white-space: pre-wrap;\n",
+              "    }\n",
+              "  </style>\n",
+              "  "
+            ]
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def rewrite(state,temp):\n",
+        "\n",
+        "  text = \"\"\n",
+        "  j = 1\n",
+        "  for scene in state[\"scenes\"]:\n",
+        "    if len(state[\"scenes\"][j-1][\"transcript\"])>0:\n",
+        "      text +=  \"\\n\\n===\\n\\nSCENE {}\\n\\n\".format(j)\n",
+        "      prompt = \"\"\"Produce a novelization of the following transcript. That is, rewrite it to be a combination of prose and dialog, turning any narration into prose.\n",
+        "\n",
+        "Transcript:\n",
+        "{}\n",
+        "\n",
+        "\"\"\".format(\"\\n\".join(state[\"scenes\"][j-1][\"transcript\"]))\n",
+        "\n",
+        "      #print(\"\\n\"+prompt+\"\\n\")\n",
+        "      text += complete_text(prompt,temp=temp)[0]\n",
+        "    j+=1\n",
+        "\n",
+        "  text +=  \"\\n\\n===\\n\\nTHE END\\n\\n\"\n",
+        "\n",
+        "  return text"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 17
+        },
+        "id": "JPfqWfSK4SDf",
+        "outputId": "d45b3aea-a414-4056-8292-bd00c3a98b39"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "\n",
+              "  <style>\n",
+              "    pre {\n",
+              "        white-space: pre-wrap;\n",
+              "    }\n",
+              "  </style>\n",
+              "  "
+            ]
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Define your world\n",
+        "\n",
+        "The `state` dictionary contains the information we use to help set the scene. Unless you want to keep playing the default world, you'll need to edit this dictionary. That is, to create a world of your own just edit the text in the cell below."
+      ],
+      "metadata": {
+        "id": "xlPkA_Vv20wV"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Set the stage for an interactive text adventure\n",
+        "state = {\n",
+        "    \"genre\": \"The following scene takes place on a zoom call sometime in the near future. \", # Set expecations. Is this the real world or fantasy?\n",
+        "    \"characters\": [\n",
+        "                    # Add a dictionary for each player. They should include their `name`, a very short `brief_bio`, and `motivation` (what makes them tick).\n",
+        "                    # adapted from this ChatGPt convo. See https://chat.openai.com/share/fc299da6-623b-4390-a584-a5241b7e34cc Teachable moment: What/Who's missing?\n",
+        "                    {\n",
+        "                        \"name\": \"Hiring Manager\",\n",
+        "                        \"brief_bio\": \"The Hiring Manager is the general office manager of a small real estate law firm. He's worked in corporate settings before and is professional,he's friendly overall but is a tough negotiator when it comes to salaries.\",\n",
+        "                        \"motivation\": \"Hiring Manager is open to negotiating but does want the final number to be as close to the original number as possible.\"\n",
+        "                    },\n",
+        "                    {\n",
+        "                        \"name\": \"Young Attorney\",\n",
+        "                        \"brief_bio\": \"Young Attorney is in 3rd year of law school. They are friendly but have an unexpected ferocity when it comes to their salary and negotiations. They are professional.\",\n",
+        "                        \"motivation\": \"Young Attorney wants to get the highest number possible for theirsalary as they have to pay an unreal amount in student loans.\"\n",
+        "                    },\n",
+        "                    {\n",
+        "                        \"name\": \"Partner\",\n",
+        "                        \"brief_bio\": \"Partner has worked at this law firm for 15 years and is well known in the city as one of the best Real Estate attorneys. They are what is known as an old school attorney and does not want to give the Young Attorney all of their wishes in their job offer becaus they believe that attonreys have to work their way up just like he did when he became an associate. He is angry, not friendly and a hard bargainer.\",\n",
+        "                        \"motivation\": \"Partner is not open to negotiating and believes the first offer they gave the Young Attorney was too much and that they didn't deserve it. He doesn't want to pay one mroe penny than the initial offer.\"\n",
+        "                    },\n",
+        "\n",
+        "\n",
+        "                ],\n",
+        "    \"scenes\": [\n",
+        "          {\n",
+        "              \"present\" : [\"Hiring Manager\",\"Young Attorney\",\"Partner\"],\n",
+        "              \"setting\": \"A zoom call with the Young Attorney, Partner and the Hiring Manager \", # Tell us where we are and what it looks like\n",
+        "              \"frame\": \"The Hiring Manager and the Young Attorney have scheduled a zoom call to discuss the offer that the law firm offered the attorney two weeks ago. Partner is harsh and hesitant to give more leeway on the offer.\",\n",
+        "              \"directors_notes\" : \"By the end of this scene the Hiring Manager, Partner, the Young Attorney should have completed their negotiations. \",\n",
+        "              \"ends_when\": \"The scene ends after Young Attorney says, \\\"Thank you very much.\\\" \",\n",
+        "              \"target_words\" : None,\n",
+        "              \"transcript\": [], # Leave as is\n",
+        "              \"summary\": \"\" # Leave as is\n",
+        "          },\n",
+        "\n",
+        "#In this case, the negotiator, Young Attorney, is leading the call to try and get a higher salary offer. , # Explain why we're here\n",
+        "           ]\n",
+        "          ,\n",
+        "  \"scene\": 0, # Starts at 0\n",
+        "  \"play_as\": \"Young Attorney\", # Leave as is\n",
+        "  \"player_goes_first\" : 1, # 1 if yes, 0 if no\n",
+        "  \"input\": None # Leave as is\n",
+        "}\n",
+        "\n",
+        "# Decide who the user will play as.\n",
+        "#state[\"play_as\"] = \"Hiring Manager\" # define a specific character\n",
+        "#state[\"play_as\"] = random.choice(state[\"characters\"])[\"name\"] # Choose a random character\n",
+        "\n",
+        "i = 0;\n",
+        "try:\n",
+        "    del usr_output\n",
+        "except NameError:\n",
+        "    pass"
+      ],
+      "metadata": {
+        "id": "SJ0auZ0jm29V",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 17
+        },
+        "outputId": "72f984cb-efbf-481d-8579-ad9a1d74c3bd"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "\n",
+              "  <style>\n",
+              "    pre {\n",
+              "        white-space: pre-wrap;\n",
+              "    }\n",
+              "  </style>\n",
+              "  "
+            ]
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#  Role Play\n",
+        "\n",
+        "Use \"Say/Do\" to type what you would like to say or do. When not typing dialogue, start your input with the lowercase word \"do\" followed by a colon (i.e., \"do:\"). Also, you need to run the next cell after every entry.\n",
+        "\n",
+        "Note: Leaving \"Say/Do\" empty will cause the story to advance without your input (i.e., the LLM will take over game play)."
+      ],
+      "metadata": {
+        "id": "lJOoSf0i11Us"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "role_paly(state)"
+      ],
+      "metadata": {
+        "id": "o_GmvZ49vKyy",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 374
+        },
+        "outputId": "56f96620-3618-4950-e8b7-8f59d21c192e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "\n",
+              "  <style>\n",
+              "    pre {\n",
+              "        white-space: pre-wrap;\n",
+              "    }\n",
+              "  </style>\n",
+              "  "
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "error",
+          "ename": "RateLimitError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mRateLimitError\u001b[0m                            Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-20-e474d5853511>\u001b[0m in \u001b[0;36m<cell line: 1>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mrole_paly\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mstate\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;32m<ipython-input-18-27d5d75f3ba1>\u001b[0m in \u001b[0;36mrole_paly\u001b[0;34m(state)\u001b[0m\n\u001b[1;32m      5\u001b[0m   \u001b[0mi\u001b[0m \u001b[0;34m+=\u001b[0m \u001b[0;36m1\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      6\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 7\u001b[0;31m   \u001b[0mstate\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mrun_scene\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mstate\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      8\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      9\u001b[0m   \u001b[0;32mif\u001b[0m \u001b[0mstate\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m\"scene\"\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m>=\u001b[0m\u001b[0;36m0\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m<ipython-input-10-6b20bd8af833>\u001b[0m in \u001b[0;36mrun_scene\u001b[0;34m(state)\u001b[0m\n\u001b[1;32m      9\u001b[0m   \u001b[0mscene_index\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mstate\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m\"scene\"\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     10\u001b[0m   \u001b[0;32mif\u001b[0m \u001b[0mlen\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mstate\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m\"scenes\"\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0mscene_index\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m\"transcript\"\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;34m==\u001b[0m \u001b[0;36m0\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 11\u001b[0;31m     \u001b[0moutput\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mset_scene\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mstate\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     12\u001b[0m     \u001b[0mstate\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m\"scenes\"\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0mscene_index\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m\"transcript\"\u001b[0m\u001b[0;34m]\u001b[0m \u001b[0;34m+=\u001b[0m \u001b[0;34m[\u001b[0m\u001b[0moutput\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     13\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m<ipython-input-5-bf43a37dd3a4>\u001b[0m in \u001b[0;36mset_scene\u001b[0;34m(state)\u001b[0m\n\u001b[1;32m     16\u001b[0m   \u001b[0;31m#print(\"\\n\"+prompt+\"\\n\")\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     17\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 18\u001b[0;31m   \u001b[0;32mreturn\u001b[0m \u001b[0;34m\"Narrator: \"\u001b[0m\u001b[0;34m+\u001b[0m\u001b[0mcomplete_text\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mprompt\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mtemp\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m0.7\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m0\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m\"output\"\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;32m<ipython-input-3-c0f313ff72c5>\u001b[0m in \u001b[0;36mcomplete_text\u001b[0;34m(prompt, temp, trys, clean, tokens_used)\u001b[0m\n\u001b[1;32m      8\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      9\u001b[0m     \u001b[0;31m#try:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 10\u001b[0;31m     response = openai.Completion.create(\n\u001b[0m\u001b[1;32m     11\u001b[0m       \u001b[0mmodel\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mmodel\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     12\u001b[0m       \u001b[0mprompt\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mprompt\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.10/dist-packages/openai/api_resources/completion.py\u001b[0m in \u001b[0;36mcreate\u001b[0;34m(cls, *args, **kwargs)\u001b[0m\n\u001b[1;32m     23\u001b[0m         \u001b[0;32mwhile\u001b[0m \u001b[0;32mTrue\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     24\u001b[0m             \u001b[0;32mtry\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 25\u001b[0;31m                 \u001b[0;32mreturn\u001b[0m \u001b[0msuper\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mcreate\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0margs\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     26\u001b[0m             \u001b[0;32mexcept\u001b[0m \u001b[0mTryAgain\u001b[0m \u001b[0;32mas\u001b[0m \u001b[0me\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     27\u001b[0m                 \u001b[0;32mif\u001b[0m \u001b[0mtimeout\u001b[0m \u001b[0;32mis\u001b[0m \u001b[0;32mnot\u001b[0m \u001b[0;32mNone\u001b[0m \u001b[0;32mand\u001b[0m \u001b[0mtime\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mtime\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;34m>\u001b[0m \u001b[0mstart\u001b[0m \u001b[0;34m+\u001b[0m \u001b[0mtimeout\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.10/dist-packages/openai/api_resources/abstract/engine_api_resource.py\u001b[0m in \u001b[0;36mcreate\u001b[0;34m(cls, api_key, api_base, api_type, request_id, api_version, organization, **params)\u001b[0m\n\u001b[1;32m    151\u001b[0m         )\n\u001b[1;32m    152\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 153\u001b[0;31m         response, _, api_key = requestor.request(\n\u001b[0m\u001b[1;32m    154\u001b[0m             \u001b[0;34m\"post\"\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    155\u001b[0m             \u001b[0murl\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.10/dist-packages/openai/api_requestor.py\u001b[0m in \u001b[0;36mrequest\u001b[0;34m(self, method, url, params, headers, files, stream, request_id, request_timeout)\u001b[0m\n\u001b[1;32m    296\u001b[0m             \u001b[0mrequest_timeout\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mrequest_timeout\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    297\u001b[0m         )\n\u001b[0;32m--> 298\u001b[0;31m         \u001b[0mresp\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mgot_stream\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_interpret_response\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mresult\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mstream\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    299\u001b[0m         \u001b[0;32mreturn\u001b[0m \u001b[0mresp\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mgot_stream\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mapi_key\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    300\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.10/dist-packages/openai/api_requestor.py\u001b[0m in \u001b[0;36m_interpret_response\u001b[0;34m(self, result, stream)\u001b[0m\n\u001b[1;32m    698\u001b[0m         \u001b[0;32melse\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    699\u001b[0m             return (\n\u001b[0;32m--> 700\u001b[0;31m                 self._interpret_response_line(\n\u001b[0m\u001b[1;32m    701\u001b[0m                     \u001b[0mresult\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mcontent\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mdecode\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"utf-8\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    702\u001b[0m                     \u001b[0mresult\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mstatus_code\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.10/dist-packages/openai/api_requestor.py\u001b[0m in \u001b[0;36m_interpret_response_line\u001b[0;34m(self, rbody, rcode, rheaders, stream)\u001b[0m\n\u001b[1;32m    763\u001b[0m         \u001b[0mstream_error\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mstream\u001b[0m \u001b[0;32mand\u001b[0m \u001b[0;34m\"error\"\u001b[0m \u001b[0;32min\u001b[0m \u001b[0mresp\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mdata\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    764\u001b[0m         \u001b[0;32mif\u001b[0m \u001b[0mstream_error\u001b[0m \u001b[0;32mor\u001b[0m \u001b[0;32mnot\u001b[0m \u001b[0;36m200\u001b[0m \u001b[0;34m<=\u001b[0m \u001b[0mrcode\u001b[0m \u001b[0;34m<\u001b[0m \u001b[0;36m300\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 765\u001b[0;31m             raise self.handle_error_response(\n\u001b[0m\u001b[1;32m    766\u001b[0m                 \u001b[0mrbody\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mrcode\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mresp\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mdata\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mrheaders\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mstream_error\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mstream_error\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    767\u001b[0m             )\n",
+            "\u001b[0;31mRateLimitError\u001b[0m: You exceeded your current quota, please check your plan and billing details."
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(json.dumps(state,indent=4))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 1000
+        },
+        "id": "SXOfGfF5hdmB",
+        "outputId": "1b6e827c-e3e2-468a-f06e-b2e0ea8d4fe0"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "\n",
+              "  <style>\n",
+              "    pre {\n",
+              "        white-space: pre-wrap;\n",
+              "    }\n",
+              "  </style>\n",
+              "  "
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "\n",
+              "  <style>\n",
+              "    pre {\n",
+              "        white-space: pre-wrap;\n",
+              "    }\n",
+              "  </style>\n",
+              "  "
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "\n",
+              "  <style>\n",
+              "    pre {\n",
+              "        white-space: pre-wrap;\n",
+              "    }\n",
+              "  </style>\n",
+              "  "
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{\n",
+            "    \"genre\": \"The following scene takes place on a zoom call sometime in the near future. \",\n",
+            "    \"characters\": [\n",
+            "        {\n",
+            "            \"name\": \"Hiring Manager\",\n",
+            "            \"brief_bio\": \"The Hiring Manager is the general office manager of a small real estate law firm. He's worked in corporate settings before and is professional,he's friendly overall but is a tough negotiator when it comes to salaries.\",\n",
+            "            \"motivation\": \"Hiring Manager is open to negotiating but does want the final number to be as close to the original number as possible.\"\n",
+            "        },\n",
+            "        {\n",
+            "            \"name\": \"Young Attorney\",\n",
+            "            \"brief_bio\": \"Young Attorney is in 3rd year of law school. They are friendly but have an unexpected ferocity when it comes to their salary and negotiations. They are professional.\",\n",
+            "            \"motivation\": \"Young Attorney wants to get the highest number possible for theirsalary as they have to pay an unreal amount in student loans.\"\n",
+            "        },\n",
+            "        {\n",
+            "            \"name\": \"Partner\",\n",
+            "            \"brief_bio\": \"Partner has worked at this law firm for 15 years and is well known in the city as one of the best Real Estate attorneys. They are what is known as an old school attorney and does not want to give the Young Attorney all of their wishes in their job offer becaus they believe that attonreys have to work their way up just like he did when he became an associate. He is angry, not friendly and a hard bargainer.\",\n",
+            "            \"motivation\": \"Partner is not open to negotiating and believes the first offer they gave the Young Attorney was too much and that they didn't deserve it. He doesn't want to pay one mroe penny than the initial offer.\"\n",
+            "        }\n",
+            "    ],\n",
+            "    \"scenes\": [\n",
+            "        {\n",
+            "            \"present\": [\n",
+            "                \"Hiring Manager\",\n",
+            "                \"Young Attorney\",\n",
+            "                \"Partner\"\n",
+            "            ],\n",
+            "            \"setting\": \"A zoom call with the Young Attorney, Partner and the Hiring Manager \",\n",
+            "            \"frame\": \"The Hiring Manager and the Young Attorney have scheduled a zoom call to discuss the offer that the law firm offered the attorney two weeks ago. Partner is harsh and hesitant to give more leeway on the offer.\",\n",
+            "            \"directors_notes\": \"By the end of this scene the Hiring Manager, Partner, the Young Attorney should have completed their negotiations. \",\n",
+            "            \"ends_when\": \"The scene ends after Young Attorney says, \\\"Thank you very much.\\\" \",\n",
+            "            \"target_words\": null,\n",
+            "            \"transcript\": [\n",
+            "                \"Narrator: The Young Attorney sat back in their chair, listening intently to the crisp voices of the Partner and Hiring Manager on the Zoom call. The light of the computer monitor illuminated their face as the virtual meeting continued, the conversation ebbing and flowing as the Attorney looked on. A sense of anticipation filled the air as the two parties discussed the potential of the Attorney joining their team. The silence seemed to linger, as if the next few words held the fate of the Attorney's career in the balance.\",\n",
+            "                \"Young Attorney: Hi Partner and Hiring Manager, how are you? thank you for taking this call\",\n",
+            "                \"Hiring Manager: Hi there! We're doing well, and glad to have the opportunity to talk with you. Let's get started, shall we?\"\n",
+            "            ],\n",
+            "            \"summary\": \"\"\n",
+            "        }\n",
+            "    ],\n",
+            "    \"scene\": 0,\n",
+            "    \"play_as\": \"Young Attorney\",\n",
+            "    \"player_goes_first\": 1,\n",
+            "    \"input\": null\n",
+            "}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Turn your adventure into a story\n",
+        "\n",
+        "Run the cell below to create a story based on your adventure."
+      ],
+      "metadata": {
+        "id": "oE5PIW1AcqPP"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "story = rewrite(state,temp=0.45)\n",
+        "print(story)"
+      ],
+      "metadata": {
+        "id": "j6te80tr4cc1",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 382
+        },
+        "outputId": "8644d8dc-bf56-4b75-8a2c-5f7787cb348c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "\n",
+              "  <style>\n",
+              "    pre {\n",
+              "        white-space: pre-wrap;\n",
+              "    }\n",
+              "  </style>\n",
+              "  "
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "\n",
+              "  <style>\n",
+              "    pre {\n",
+              "        white-space: pre-wrap;\n",
+              "    }\n",
+              "  </style>\n",
+              "  "
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "\n",
+              "  <style>\n",
+              "    pre {\n",
+              "        white-space: pre-wrap;\n",
+              "    }\n",
+              "  </style>\n",
+              "  "
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "\n",
+            "===\n",
+            "\n",
+            "SCENE 1\n",
+            "\n",
+            "The Young Attorney sat back in their chair, illuminated by the computer monitor's light. They listened intently as the Partner and Hiring Manager spoke, their crisp voices ebbing and flowing through the Zoom call. A sense of anticipation filled the air as the two parties discussed the potential of the Attorney joining their team. The silence seemed to linger, as if the next few words held the fate of the Attorney's career in the balance.\n",
+            "\n",
+            "Finally, the Young Attorney spoke up. \"Hi Partner and Hiring Manager, how are you? Thank you for taking this call.\"\n",
+            "\n",
+            "\"Hi there! We're doing well, and glad to have the opportunity to talk with you,\" the Hiring Manager replied. \"Let's get started, shall we?\"\n",
+            "\n",
+            "===\n",
+            "\n",
+            "THE END\n",
+            "\n",
+            "\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
